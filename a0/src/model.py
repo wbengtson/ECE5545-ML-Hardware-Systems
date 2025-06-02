@@ -10,7 +10,7 @@ class Net(nn.Module):
         self.dropout1 = nn.Dropout(0.25)
         self.dropout2 = nn.Dropout(0.5)
         self.fc1 = nn.Linear(9216, 128)
-        self.fc2 = nn.Linear(128, 10) # TODO change the number of outputs in the final layer to 10
+        self.fc2 = nn.Linear(128, 10)
 
     def forward(self, x):
         x = self.conv1(x)
